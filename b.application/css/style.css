@@ -189,7 +189,102 @@ footer {
    ========================= */
    
 /*Page heading */
-projects-intro {
-    padding: 30px, 0 50px;
-    border-bottom: 1px solid, #444;
+/* Page heading */
+
+.projects-intro {
+    padding: 30px 0 50px;
+    border-bottom: 1px solid #444;
+}
+
+.section-label {
+    color: #b5ff00;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.projects-intro h2 {
+    font-size: clamp(36px, 6vw, 80px);
+    margin: 15px 0;
+    line-height: 1;
+}
+
+.projects-intro > p:last-child {
+    color: #aaa;
+}
+
+
+/* Project grid */
+
+.projects-section {
+    padding-top: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/* Individual project card */
+
+.project-card {
+    display: block;
+    background-color: #1c1c1c;
+    border: 1px solid #444;
+}
+
+.project-card:hover {
+    border-color: #b5ff00;
+}
+
+
+/* Image placeholder */
+
+.project-image {
+    height: 180px;
+    background-color: #292929;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #555;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+/* Project information */
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.project-info p {
+    margin-bottom: 0;
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+
+/* Responsive grid */
+
+@media (max-width: 1000px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
