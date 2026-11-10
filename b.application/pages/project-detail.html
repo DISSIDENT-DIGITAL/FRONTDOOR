@@ -53,15 +53,14 @@
             <h3>Details:</h3>
 
             <div class="gallery-container">
-                <div class="gallery-placeholder">
-                    IMAGE 01
-                </div>
+                <img id="gallery-image" src="" alt="Project gallery image">
 
             </div>
 
             <div class="gallery-controls">
-                <button type="button">Previous</button>
-                <button type="button">Next</button>
+                <button type="button" id="previous-image">Previous</button>
+                <span id="image-counter">0 / 0</span>
+                <button type="button" id="next-image">Next</button>
             </div>
         </section>
 
@@ -90,7 +89,9 @@
     <script src="../js/projects-data.js"></script>
 
     <!--load the project details functions-->
-    <script src="../js/project-details.js"></script>
+    <script src="../js/projects-detail.js"></script>
+    <!--carousel functions-->
+    <script src="../js/carousel.js"></script>
 
 </body>
 </html>

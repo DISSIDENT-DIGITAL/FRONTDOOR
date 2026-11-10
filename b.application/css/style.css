@@ -275,6 +275,70 @@ footer {
 }
 
 
+/* ==================================
+   PROJECT DETAIL: image gallery for projects
+   ================================== */
+
+.project-gallery {
+    margin-top: 50px;
+}
+
+.project-gallery h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #b5ff00;
+}
+
+.gallery-container {
+    background-color: #1c1c1c;
+    border: 1px solid #444;
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery-image {
+    display: block;
+    width: 100%;
+    max-height: 550px;
+    object-fit: contain;
+}
+
+.gallery-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.gallery-controls button {
+    background-color: #1c1c1c;
+    color: #f2f2ee;
+    border: 1px solid #444;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.gallery-controls button:hover {
+    border-color: #b5ff00;
+    color: #b5ff00;
+}
+
+.gallery-controls button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#image-counter {
+    color: #aaa;
+    font-size: 12px;
+}
+
+
+
 /* Responsive grid */
 
 @media (max-width: 1000px) {
